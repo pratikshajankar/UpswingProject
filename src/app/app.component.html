@@ -37,36 +37,36 @@
     <form [formGroup]="myForm">
         <label for="">Employee Name:</label><br>
         <input type="text" formControlName="ename" placeholder="Enter Employee Name">
-        <div *ngIf="myForm.controls['ename'].invalid && myForm.controls['ename'].touched">
+        <div *ngIf="myForm.controls['ename'].invalid && myForm.controls['ename'].touched" style="color: red;">
             Please Enter Employee Name.
         </div><br>
         <label for="">Email ID:</label><br>
         <input type="email" formControlName="emailid" placeholder="Enter Email ID">
-        <div *ngIf="myForm.controls['emailid'].invalid && myForm.controls['emailid'].touched">
+        <div *ngIf="myForm.controls['emailid'].invalid && myForm.controls['emailid'].touched" style="color: red;">
             Please Enter Your EmailId.
         </div><br>
         <label for="">Contact No:</label><br>
         <input type="tel" formControlName="contactno" placeholder="Enter Contact Number">
-        <div *ngIf="myForm.controls['contactno'].invalid && myForm.controls['contactno'].touched">
+        <div *ngIf="myForm.controls['contactno'].invalid && myForm.controls['contactno'].touched" style="color: red;">
             Please Enter Contact Number.
         </div>
-        <div *ngIf="myForm.get('contactno')?.errors?.['maxlength']">
+        <div *ngIf="myForm.get('contactno')?.errors?.['maxlength']" style="color: red;">
             Contact number cannot exceed 10 digits.
         </div>
         <br>
         <label for="">City:</label><br>
         <input type="text" formControlName="city" placeholder="Enter City">
-        <div *ngIf="myForm.controls['city'].invalid && myForm.controls['city'].touched">
+        <div *ngIf="myForm.controls['city'].invalid && myForm.controls['city'].touched" style="color: red;">
             Please Enter Employee City.
         </div><br>
         <label for="">State:</label><br>
         <input type="text" formControlName="state" placeholder="Enter State">
-        <div *ngIf="myForm.controls['state'].invalid && myForm.controls['state'].touched">
+        <div *ngIf="myForm.controls['state'].invalid && myForm.controls['state'].touched" style="color: red;">
             Please Enter Employee Name.
         </div><br>
         <label for="">Address:</label><br>
         <textarea formControlName="address" placeholder="Enter Address"></textarea>
-        <div *ngIf="myForm.controls['address'].invalid && myForm.controls['address'].touched">
+        <div *ngIf="myForm.controls['address'].invalid && myForm.controls['address'].touched" style="color: red;">
             Please Enter Employee Address.
         </div><br>
 

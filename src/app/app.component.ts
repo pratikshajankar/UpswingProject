@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Employee } from './core/models/Classes/Employee';
 import {  Color, NgxChartsModule, ScaleType } from '@swimlane/ngx-charts';
+import{PortalModule} from 'angular/cdk/portal';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,TableModule,CommonModule,ReactiveFormsModule,NgxChartsModule],
+  imports: [RouterOutlet,TableModule,CommonModule,ReactiveFormsModule,NgxChartsModule,PortalModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
